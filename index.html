@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolis</title>
+
+    <!-- CSS style link  -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- fontawesome icons link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Boxicons link  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo" style="color: black;">Muhammad <span>Talha</span></a>
+
+        <nav class="myNav">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#testimonial">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="header-btn" href="#contact">
+            <i class="fas fa-envelope"></i>  Email
+        </a>
+
+        <i class="fas fa-bars" id="menu-icon"></i>
+
+    </header>
+
+    <script>
+    // -----------------------  toggler icon navbar
+let menuIcon = document.querySelector("#menu-icon");
+let myNav = document.querySelector(".myNav");
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("fa-times");
+    myNav.classList.toggle("open");
+    menuIcon.classList.toggle("rotate");
+}
+
+window.onscroll = () => {
+    menuIcon.classList.remove("fa-times");
+    myNav.classList.remove("open");
+}
+</script>
+
+    <!-- home section design  -->
+     <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, <span>I'm</span></h3>
+            <h1>Muhammad Talha</h1>
+            <h3>And I'm a <span class="multiple-text">Fronted Developer</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ad ea atque eius,
+                 expedita voluptatem nisi ullam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, deleniti.</p>
+
+            <div class="social-media">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
+            </div>     
+
+            <div class="btn-box">
+            <a href="#contact" class="btn">Hire Me</a>
+            <a href="#contact" class="btn">Let's  Talk</a>
+            </div>
+        
+        </div>
+
+        <div class="home-img">
+            <img src="./home img.png" alt="">
+        </div>
+
+     </section>
+     
+     <!-- about section design  -->
+      <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <div class="about-img">
+            <img src="./about img.png" alt="">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>I'm a <span class="multi-text">Fronted Developer</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi obcaecati veritatis hic harum. Illo, totam ipsum nemo distinctio molestias consectetur neque, labore necessitatibus repellendus odio fugiat. Hic molestiae dolorem tenetur neque pariatur exercitationem necessitatibus ex quasi amet odio porro, saepe quod illum blanditiis, consequatur officia? Culpa nisi tenetur cum cupiditate.</p>
+
+            <div class="btn-box btns">
+                <a href="#skills" class="btn">Read More</a>
+                <a href="./Talha CV 2.pdf" class="btn">Download CV</a>
+            </div>
+        </div>
+      </section>
+
+      <!-- skills section design  -->
+       <section class="skills" id="skills">
+        <div class="main-text">
+            <span style="font-size: 1.5rem; color: black;" class="animate"><span>Technical &</span> Professionl</span>
+            <h2 class="heading"><span style="color: black;">MY</span> Skills</h2>
+        </div>
+
+        <div class="skill-main">
+        <div class="skill-left">
+            <h3>Technical Skills</h3>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>HTML</p>
+                    <p>90%</p>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>CSS</p>
+                    <p>80%</p>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>JavaScript</p>
+                    <p>60%</p>
+                </div>
+                <div class="bar">
+                    <span class="javascript"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>BootStrap</p>
+                    <p>85%</p>
+                </div>
+                <div class="bar">
+                    <span class="bootstrap"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>WordPress</p>
+                    <p>70%</p>
+                </div>
+                <div class="bar">
+                    <span class="wordpress"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Elementor</p>
+                    <p>80%</p>
+                </div>
+                <div class="bar">
+                    <span class="elementor"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="skill-right">
+            <h3>Professional Skills</h3>
+            <div class="professional">
+                <div class="box">
+                    <div class="circle" data-dots="80" data-percent="90"></div>
+                    <div class="text">
+                        <big>90%</big>
+                        <small>Creativity</small>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="circle" data-dots="80" data-percent="80"></div>
+                    <div class="text">
+                        <big>80%</big>
+                        <small>Team Work</small>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="circle" data-dots="80" data-percent="88"></div>
+                    <div class="text">
+                        <big>88%</big>
+                        <small>Project Management</small>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="circle" data-dots="80" data-percent="70"></div>
+                    <div class="text">
+                        <big>70%</big>
+                        <small>Communication</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+       </section>
+
+     <!-- portfolio section (work, services) -->
+<section class="section portfolio" id="portfolio">
+  <div class="mn-text">
+    <span style="font-size: 1.5rem;">Work & <span style="color: black;">Services</span></span>
+    <h2 class="title heading">Port<span>folio</span></h2>
+  </div>
+
+  <div class="tab-box">
+    <div class="tab-list portfolio-list active" data-tab="work">
+      <h3>My Work</h3>
+    </div>
+    <div class="tab-list portfolio-list" data-tab="service">
+      <h3>My Service</h3>
+    </div>
+  </div>
+
+  <div class="tab-wrapper">
+    <div class="tab-grid portfolio-box work active">
+      <div class="tab-item portfolio-item">
+        <div class="work-img">
+            <img src="./work1.png" alt="">
+        </div>
+        <div class="work-info">
+            <h4>Fronted Project</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, cupiditate.</p>
+            <div class="tech-used">
+                <p>HTML, CSS, Bootstrap</p>
+            </div>
+            <div class="portfolio-icon work-icon">
+                <a href="./Frontend/Portfolio.html" target="_blank">
+                    <i class="bx bx-arrow-back"></i>
+                    <span class="tooltip">Preview</span>
+                </a>
+                <!-- <a href="#">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip">Github Repository</span>
+                </a> -->
+            </div>
+        </div>
+      </div>
+
+            <div class="tab-item portfolio-item">
+        <div class="work-img">
+            <img src="./work2.png" alt="">
+        </div>
+        <div class="work-info">
+            <h4>DBC Project</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, cupiditate.</p>
+            <div class="tech-used">
+                <p>HTML, CSS</p>
+            </div>
+            <div class="portfolio-icon work-icon">
+                <a href="./DBTC/DBC ( My Website ).html" target="_blank">
+                    <i class="bx bx-arrow-back"></i>
+                    <span class="tooltip">Preview</span>
+                </a>
+                <!-- <a href="#">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip">Github Repository</span>
+                </a> -->
+            </div>
+        </div>
+      </div>
+
+      <div class="tab-item portfolio-item">
+        <div class="work-img">
+            <img src="./work3.png" alt="">
+        </div>
+        <div class="work-info">
+            <h4>WordPress Project</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, cupiditate.</p>
+            <div class="tech-used">
+                <p>WordPress, CSS, Elementor</p>
+            </div>
+            <div class="portfolio-icon work-icon">
+                <a href="http://localhost/Portfolio/" target="_blank">
+                    <i class="bx bx-arrow-back"></i>
+                    <span class="tooltip">Preview</span>
+                </a>
+                <!-- <a href="#">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip">Github Repository</span>
+                </a> -->
+            </div>
+        </div>
+      </div>
+
+            <div class="tab-item portfolio-item">
+        <div class="work-img">
+            <img src="./work4.png" alt="">
+        </div>
+        <div class="work-info">
+            <h4>Web Project</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, cupiditate.</p>
+            <div class="tech-used">
+                <p>HTML, CSS, Bootstrap</p>
+            </div>
+            <div class="portfolio-icon work-icon">
+                <a href="./Web/practice.html" target="_blank">
+                    <i class="bx bx-arrow-back"></i>
+                    <span class="tooltip">Preview</span>
+                </a>
+                <!-- <a href="#">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip">Github Repository</span>
+                </a> -->
+            </div>
+        </div>
+      </div>
+
+            <div class="tab-item portfolio-item">
+        <div class="work-img">
+            <img src="./work5.png" alt="">
+        </div>
+        <div class="work-info">
+            <h4>Portfolio Project</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, cupiditate.</p>
+            <div class="tech-used">
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="portfolio-icon work-icon">
+                <a href="./Portfolio/index.html" target="_blank">
+                    <i class="bx bx-arrow-back"></i>
+                    <span class="tooltip">Preview</span>
+                </a>
+                <!-- <a href="#">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip">Github Repository</span>
+                </a> -->
+            </div>
+        </div>
+      </div>
+
+            <div class="tab-item portfolio-item">
+        <div class="work-img">
+            <img src="./work6.png" alt="">
+        </div>
+        <div class="work-info">
+            <h4>Elementor Project</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, cupiditate.</p>
+            <div class="tech-used">
+                <p>Elementor, Elements Kit, CSS</p>
+            </div>
+            <div class="portfolio-icon work-icon">
+                <a href="http://localhost/website1/" target="_blank">
+                    <i class="bx bx-arrow-back"></i>
+                    <span class="tooltip">Preview</span>
+                </a>
+                <!-- <a href="#">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip">Github Repository</span>
+                </a> -->
+            </div>
+        </div>
+      </div>
+
+       <div class="tab-item portfolio-item">
+        <div class="work-img">
+            <img src="./work7.png" alt="">
+        </div>
+        <div class="work-info">
+            <h4>TCDA Project</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, cupiditate.</p>
+            <div class="tech-used">
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="portfolio-icon work-icon">
+                <a href="./TCDA/TCDA (My Website).html" target="_blank">
+                    <i class="bx bx-arrow-back"></i>
+                    <span class="tooltip">Preview</span>
+                </a>
+                <!-- <a href="#">
+                    <i class="bx bxl-github"></i>
+                    <span class="tooltip">Github Repository</span>
+                </a> -->
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!------------------------------------------- my services  -->
+    <div class="tab-grid portfolio-box service">
+      <div class="tab-item portfolio-item">
+        <div class="portfolio-icon service-icon">
+            <i class="bx bx-code-alt icon"></i>
+            <a href="#">
+                <i class="bx bx-arrow-back"></i>
+                <span class="tooltip">Read More</span>
+            </a>
+        </div>
+        <h4>Web Development</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, assumenda.</p>
+      </div>
+
+      <div class="tab-item portfolio-item">
+        <div class="portfolio-icon service-icon">
+            <i class="bx bx-palette icon"></i>
+            <a href="#">
+                <i class="bx bx-arrow-back"></i>
+                <span class="tooltip">Read More</span>
+            </a>
+        </div>
+        <h4>UI/UX Design</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, assumenda.</p>
+      </div>
+
+      <div class="tab-item portfolio-item">
+        <div class="portfolio-icon service-icon">
+            <i class="bx bxs-paint icon"></i>
+            <a href="#">
+                <i class="bx bx-arrow-back"></i>
+                <span class="tooltip">Read More</span>
+            </a>
+        </div>
+        <h4>Template Design</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, assumenda.</p>
+      </div>
+
+      <div class="tab-item portfolio-item">
+        <div class="portfolio-icon service-icon">
+            <i class="bx bx-signal-5 icon"></i>
+            <a href="#">
+                <i class="bx bx-arrow-back"></i>
+                <span class="tooltip">Read More</span>
+            </a>
+        </div>
+        <h4>SEO</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, assumenda.</p>
+      </div>
+
+      <div class="tab-item portfolio-item">
+        <div class="portfolio-icon service-icon">
+            <i class="bx bx-slideshow icon"></i>
+            <a href="#">
+                <i class="bx bx-arrow-back"></i>
+                <span class="tooltip">Read More</span>
+            </a>
+        </div>
+        <h4>Portfolio Project</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, assumenda.</p>
+      </div>
+
+      <div class="tab-item portfolio-item">
+        <div class="portfolio-icon service-icon">
+            <i class="bx bx-camera icon"></i>
+            <a href="#">
+                <i class="bx bx-arrow-back"></i>
+                <span class="tooltip">Read More</span>
+            </a>
+        </div>
+        <h4>Frontend Project</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, assumenda.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!----------------------------------------- testimonial section design  -->
+<section class="testimonials" id="testimonial">
+    <div style="font-size: 1.5rem; color: black; text-align: center;"><span>Some Words Fr</span>om Our Clients</div>
+        <h2 class="heading">Testim<span>onials</span></h2>
+        
+    <div class="testimonials-box">
+        <div class="wrapper testimonial-wrapper">
+            <div class="testimonial-item">
+                <img src="./testimonial1.jpg" alt="">
+                <h2>Awais Ahmad</h2>
+                <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum beatae dolorem sapiente."</p>
+            </div>
+
+             <div class="testimonial-item">
+                <img src="./testimonial2.jpg" alt="">
+                <h2>Salman Tahir</h2>
+                <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum beatae dolorem sapiente."</p>
+            </div>
+
+             <div class="testimonial-item">
+                <img src="./testimonial3.jpg" alt="">
+                <h2>M.Taha</h2>
+                <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum beatae dolorem sapiente."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----------------------------------------- contact section design  -->
+ <section class="contact" id="contact">
+    <div class="c-mn-text">
+    <span style="font-size: 1.7rem;">Let's Work <span style="color: black;">Together</span></span>
+    <h2 class="heading">Contact <span>Me</span></h2>
+  </div>
+
+    <form action="">
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+            </div>
+        </div>
+
+        <div class="input-group-2">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Submit" class="form-btn">
+        </div>
+    </form>
+ </section>
+
+    <!-- --------------------------------------- footer design  -->
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+        <ul class="list">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Services</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyright">
+            &copy Muhammad Talha | All Rights Reserved 
+        </p>
+    </footer>
+
+     <!------------------------------------ Back to Top Button -->
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // Show button after scrolling 300px
+    window.onscroll = function() {
+      const btn = document.getElementById("backToTopBtn");
+      btn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+  
+    // Scroll to top smoothly
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+    <!-- scroll reveal -->
+     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js  -->
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- custom js   -->
+      <script src="./index.js"></script>
+</body>
+</html>
